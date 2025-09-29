@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body {
+                background-color: rgb(31, 31, 31);
+                font-size: x-large;
+            }
+            a {
+                display: flex;
+                justify-content: center;
+            }
+            p, h1 {
+                display: flex;
+                justify-content: center;
+                text-shadow: -1px -1px 0 #a1a1a1, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+            }
+            code {
+                background: none;
+            }
+            #hidden {
+                display: none;
+            }
+            :checked + #hidden {
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <h1><b>ctrl+f</b></h1>
+        <p>Umamusume Links</p>
+            <a href="https://alpha123.github.io/uma-tools/umalator-global/">Race Simulator</a>
+            <a href="https://docs.google.com/document/d/11X2P7pLuh-k9E7PhRiD20nDX22rNWtCpC1S4IMx_8pQ/preview?tab=t.0#heading=h.fgy5q162l0r4">Global Reference Doc</a>
+            <a href="https://uma-global.pure-db.com/#/search?searchInfo=eyJwYXJ0bmVyX2NhcmRfaWRzIjpbXSwiZXhjbHVkZV90eXBlIjowLCJleGNsdWRlX2NhcmRfaWRzIjpbXSwic3VwcG9ydF9jYXJkIjp7ImlkIjowLCJsaW1pdF9icmVhayI6NH0sImJsdWVfZmFjdG9ycyI6W10sInJlZF9mYWN0b3JzIjpbXSwiZ3JlZW5fZmFjdG9ycyI6W10sImNvbW1vbl9mYWN0b3JzIjpbXSwicmFjZV9mYWN0b3JzIjpbXSwic2NlbmFyaW9fZmFjdG9ycyI6W10sIm90aGVyX2ZhY3RvcnMiOltdLCJyYWNlIjp7Indpbl9jb3VudCI6MCwiZzFfd2luX2NvdW50IjowfSwid2hpdGVfZmFjdG9yIjp7Im51bSI6MCwic2VhcmNoX3R5cGUiOjB9LCJzZWFyY2hfY291bnQiOjEwLCJleGNsdWRlX2Z1bGxfZm9sbG93ZXJfdXNlciI6dHJ1ZX0%3D">Uma DB </a>
+            <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ1bJUx-NQHJvwYE3Jcs9UP5aFVdWwoPVZc5Z7GN3oUGyB7-Rl8YZ48y-lJEvFWTGIrQmOa-yTehPkK/pubhtml#gid=0">Global Banner Schedule (Speculative)</a>
+            <a href="https://uma.moe/">Uma.moe</a>
+            <a href="https://docs.google.com/document/d/1iUV8pAc5-eXePJJA8hhgeJA6KjuCczjf68ZxdzYY4tM/edit?tab=t.0#heading=h.eov9wixpwcwm">Support Card Evaluation</a>
+            <a href="https://www.canva.com/design/DAGtOO4KsO4/Koz7xqxxQvpicG84ABIZXw/edit">Canva Global Info/Cups</a>
+        <p></p>
+        <p>C++ tasks for VSCode</p>
+        <p>SDL3/OpenGL</p>
+        <pre>
+            <code>
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build and Run SDL3/OpenGL",
+            "type": "shell",
+            "command": "cmd",
+            "args": [
+                    "/c",
+                    "g++ \"${fileBasename}\" -IC:/mingw64/SDL3_x64/include -LC:/mingw64/SDL3_x64/lib -lSDL3 -lopengl32 -lglu32 -o \"${fileBasenameNoExtension}.exe\" && \"${fileBasenameNoExtension}.exe\""
+                ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+
+            "problemMatcher": {
+                "owner": "cpp",
+                "fileLocation": ["relative", "${workspaceFolder}"],
+                "pattern": {
+                    "regexp": "^(..[^:]*):([0-9]+):([0-9]+): (.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            }
+        }
+    ]
+}
+            </code>
+        </pre>
+        <p>EAPM OBS Script</p>
+        <a href="https://github.com/saphdgh/EAPM-Display-OBS-Script">https://github.com/saphdgh/EAPM-Display-OBS-Script</a>
+        <p></p>
+        <p>Peripherials</p>
+        <a href="https://www.amazon.com/Moondrop-LAN-Earphone-Earbuds-Detachable/dp/B0BVW1FZZL">Moondrop LAN</a>
+        <a href="https://www.amazon.com/Moondrop-LAN-Earphone-Earbuds-Detachable/dp/B0BVW1FZZL">Yunzii AL68 Milk v2</a>
+        <a href="https://www.amazon.com/dp/B0FFG7PGYX?ie=UTF8">Pulsar Xlite V3 mini</a>
+        <a href="https://www.amazon.com/SAMSUNG-Gaming-Monitor-Ultrawide-LS27AG500PNXZA/dp/B096YMQ3C8">Samsung G50A 27" 165hz</a>
+        <p></p>
+
+    </body>
+</html>
