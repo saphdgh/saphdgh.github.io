@@ -55,7 +55,7 @@
             "command": "cmd",
             "args": [
                     "/c",
-                    "g++ \"${fileBasename}\" -IC:/mingw64/SDL3_x64/include -LC:/mingw64/SDL3_x64/lib -lSDL3 -lopengl32 -lglu32 -o \"${fileBasenameNoExtension}.exe\" && \"${fileBasenameNoExtension}.exe\""
+                    "g++ \"${fileBasename}\" -IC:/mingw64/SDL3_x64/include -LC:/mingw64/SDL3_x64/lib -lSDL3 -lopengl32 -lglu32 -mwindows -o \"${fileBasenameNoExtension}.exe\" && \"${fileBasenameNoExtension}.exe\""
                 ],
             "group": {
                 "kind": "build",
@@ -90,4 +90,5 @@
         <p></p>
 
     </body>
+
 </html>
