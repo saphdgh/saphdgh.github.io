@@ -45,20 +45,21 @@
         <p></p>
         <p>stam = 35 * per 100m</p>
         <p>medium 1 gold, long 2 gold</p>
-        <p>C++ tasks for VSCode</p>
-        <p>SDL3/OpenGL</p>
+        <p></p>
+        <p>C++ task for VSCode</p>
+        <p>glew, glfw, opengl, glu</p>
         <pre>
             <code>
 {
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Build and Run SDL3/OpenGL",
+            "label": "Build and Run mingw, glfw, glew, glu, opengl",
             "type": "shell",
             "command": "cmd",
             "args": [
                     "/c",
-                    "g++ \"${fileBasename}\" -IC:/mingw64/SDL3_x64/include -LC:/mingw64/SDL3_x64/lib -lSDL3 -lopengl32 -lglu32 -mwindows -o \"${fileBasenameNoExtension}.exe\" && \"${fileBasenameNoExtension}.exe\""
+                    "g++ \"${fileBasename}\" -LC:/mingw64/glfw-mingw-w64/lib -IC:/mingw64/glfw-mingw-w64/include -LC:/mingw64/glew-2.2.0/lib -IC:/mingw64/glew-2.2.0/include -lglew32 -lglfw3 -lopengl32 -lglu32 -mwindows -o \"${fileBasenameNoExtension}.exe\" && \"${fileBasenameNoExtension}.exe\""
                 ],
             "group": {
                 "kind": "build",
@@ -97,5 +98,6 @@
     </body>
 
 </html>
+
 
 
