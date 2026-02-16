@@ -59,7 +59,7 @@
             "command": "cmd",
             "args": [
                     "/c",
-                    "g++ \"${fileBasename}\" -LC:/mingw64/glfw-mingw-w64/lib -IC:/mingw64/glfw-mingw-w64/include -LC:/mingw64/glew-2.2.0/lib -IC:/mingw64/glew-2.2.0/include -lglew32 -lglfw3 -lopengl32 -lglu32 -mwindows -o \"${fileBasenameNoExtension}.exe\" && \"${fileBasenameNoExtension}.exe\""
+                    "g++ \"${fileBasename}\" -static -LC:/mingw64/glfw-mingw-w64/lib -IC:/mingw64/glfw-mingw-w64/include -LC:/mingw64/glew-2.2.0/lib -IC:/mingw64/glew-2.2.0/include -IC:/mingw64/glm/ -LC:/mingw64/glm/ -lglew32s -lglfw3 -lopengl32 -lglu32 -mwindows -o \"${fileBasenameNoExtension}.exe\" && \"${fileBasenameNoExtension}.exe\""
                 ],
             "group": {
                 "kind": "build",
@@ -99,6 +99,7 @@
     </body>
 
 </html>
+
 
 
 
